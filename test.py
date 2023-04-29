@@ -4,6 +4,8 @@ num = random.randint(0, 100)
 
 print(num)
 
-num_final = num * 0.5
-
-print(num_final)
+if input("randomize again? Y/N: ") == "Y":
+    num_final = random.randint(0, 100)
+    print(num_final)
+else:
+    print("ok. Your number stays ", num)
